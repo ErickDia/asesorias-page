@@ -1,0 +1,145 @@
+/* trabjo ayuda detalle */
+
+.trabajo-ayuda-detalle__header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.trabajo-ayuda-detalle__precio{
+    text-align: end;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+.trabajo-ayuda-detalle__row{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.trabajo-ayuda-detalle__left-col{
+    width: 35%;
+
+}
+.trabajo-ayuda-detalle__rigth-col{
+    width: 65%;
+}
+
+.trabajo-ayuda-detalle__subcontainer{
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.trabajo-ayuda-detalle__subcontainer h1{
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+
+}
+
+/* temas practica */
+.temas-practica {
+    position: relative;
+    min-height: 17rem;
+    margin-bottom: 4rem;
+}
+
+.temas-practica ul{
+    width: calc(100% - 5rem);
+}
+
+.temas-practica__list {
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+.temas-practica__list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+.temas-practica__list li:last-child {
+    margin-bottom: 0;
+}
+.temas-practica__code-img {
+    width: 8rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    translate: 3rem 2rem;
+}
+
+/* solicitud aceptada */
+
+.solicitud-aceptada{
+    padding: 3rem;
+    width: 100%;
+    max-width: 33rem;
+}
+.solicitud-aceptada h1 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.solicitud-aceptada h2 {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+.solicitud-aceptada p {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.solicitud-aceptada img {
+    width: 9rem;
+    padding: 3.5rem 0;
+}
+
+/* asesores */
+
+.asesores-trabajo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+
+    .trabajo-ayuda-detalle__left-col{
+        width: 50%;
+    
+    }
+    .trabajo-ayuda-detalle__rigth-col{
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .trabajo-ayuda-detalle__row{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .trabajo-ayuda-detalle__left-col{
+        width: 100%;
+    
+    }
+    .trabajo-ayuda-detalle__rigth-col{
+        width: 100%;
+    }
+
+    .trabajo-ayuda-detalle__subcontainer{
+        font-size: 0.9rem;
+        padding: 1.2rem;
+    }
+    
+    .trabajo-ayuda-detalle__subcontainer h1{
+        font-size: 1rem;
+    }
+    .temas-practica__code-img {
+        width: 6rem;
+        translate: 2rem 1rem;
+    }
+}

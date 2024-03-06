@@ -1,0 +1,129 @@
+.main-content {
+    padding: 3rem;
+}
+.main-content__title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.main-content__title span {
+    transition: color 0.3s;
+}
+.main-content__title span:hover {
+    color: #5e5e5e;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 1rem;
+}
+
+/* flex */
+.flex-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.flex-center-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* size */
+.width-100{
+    width: 100%;
+}
+
+/* form */
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+form input{
+    border: 1px solid #A3A3A3;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    outline:none;
+}
+
+form button {
+    padding: 1rem 2.3rem;
+    border-radius: 0.3rem;
+    background-color: #424C59;
+    color: #fff;
+    font-weight: 500;
+    align-self: flex-end;
+    display: flex;
+    gap: 0.7rem;
+}
+
+/* margins */
+.margin-bottom-05{
+    margin-bottom: 0.5rem;
+}
+
+.margin-bottom-1{
+    margin-bottom: 1rem;
+}
+
+/* backgrounds */
+
+.bg-white-shadow {
+    background-color: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pd-3 {
+    padding: 3rem;
+}
+/* cursor */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*  */
+@media (max-width: 1050px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .pd-3 {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .main-content {
+        padding: 2rem;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .main-content {
+        padding: 0.8rem;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+    .pd-3 {
+        padding: 1.3rem;
+    }
+    .main-content__title {
+        font-size: 0.9rem;
+    }
+}
+

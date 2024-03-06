@@ -1,0 +1,69 @@
+.main-content-intro {
+    padding: 0rem;
+}
+.categorias {
+    display: flex;
+    min-height: calc(100vh - 85px);
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+.main-card {
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-card--bg-dark {
+    background-color: #1313136b;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+}
+#asesoria-img {
+    background-image: url("/asesorias.png");
+    
+}
+#pdn-img {
+    background-image: url("/pdn.png");
+    
+}
+#curso-offile-img{
+    background-image: url("/qweasd.png");
+}
+
+
+@media (max-width: 1000px) {
+    .categorias {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .main-card {
+        background-color: rgb(44, 44, 44);
+        height: calc( ((100vh - 85px) / 3) - (1rem / 3) );
+    }
+    #asesoria-img {
+        background-position: 0% 35%;
+        
+    }
+    #pdn-img {
+        background-position: 0% 35%;
+        
+    }
+}
+
+/* @media (max-width: 550px) {
+    .categorias {
+        gap: 1rem;
+    }
+}
+ */

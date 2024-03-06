@@ -1,0 +1,12 @@
+/* GENERAL */
+@import '../components/navbar.components.css';
+/* OVERVIEW */
+@import '../components/main-page.components.css';
+/* AYUDAS */
+@import '../components/curso-ayuda.components.css';
+@import '../components/trabajo-ayuda.components.css';
+@import '../components/trabajo-ayuda-detalle.components.css';
+@import '../components/staff.components.css';
+
+
+
