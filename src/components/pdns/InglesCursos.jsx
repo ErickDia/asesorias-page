@@ -10,8 +10,14 @@ export const InglesCursos = ({setCursoiSelect}) => {
     const [cursos, setCursos] = useState([])
 
     const onClickItem = (curso) => {
-        navigate(`/ingles/${curso.cursoi_url}`);
-        setCursoiSelect({...curso});
+        if (curso.cursoi_tipo == 0) {
+            navigate(`/ingles/${curso.cursoi_url}`);
+            setCursoiSelect({...curso});
+        } else if (curso.cursoi_tipo == 1) {
+            navigate(`/ingles/d/${curso.cursoi_url}`);
+            setCursoiSelect({...curso});
+        }
+        
     }
 
     useEffect(() => {

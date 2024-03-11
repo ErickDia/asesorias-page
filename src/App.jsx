@@ -11,6 +11,7 @@ import { Tienda } from './components/tienda/Tienda'
 import { Stuff } from './components/stuff/Stuff'
 import { InglesTrabajos } from './components/pdns/InglesTrabajos'
 import { AyudasTrabajosDirecto } from './components/ayudasTrabajos/AyudasTrabajosDirecto'
+import { InglesTrabajoDirecto } from './components/pdns/InglesTrabajoDirecto'
 
 
 
@@ -94,6 +95,7 @@ function App() {
         <Route path='/ingles' element = {<InglesCursos setCursoiSelect={setCursoiSelect}/>}/>
         <Route path='/ingles/:cursoi' element = {<InglesTrabajos cursoiSelect={cursoiSelect} setCursoiSelect={setCursoiSelect} setPdnSelect={setPdnSelect}/>}/>
         <Route path='/ingles/:cursoi/:trabajoi' element = {<InglesPDNTrabajo pdnSelect={pdnSelect} setPdnSelect={setPdnSelect}/>}/>
+        <Route path='/ingles/d/:cursoi' element = {<InglesTrabajoDirecto pdnSelect={pdnSelect} setPdnSelect={setPdnSelect}/>}/>
         <Route path='/tienda' element = {<Tienda />}/>
         <Route path='/staff' element = {<Stuff />}/>
 

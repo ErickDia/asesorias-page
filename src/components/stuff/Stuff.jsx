@@ -90,6 +90,24 @@ export const Stuff = () => {
                         </div>
                     </article>
                 </li>
+                <li className='card-staff bg-white-shadow' >
+                    <article>
+                        <div className='card-staff__part card-staff__part--images'>
+                            <div className='card-staff__image'>
+                                <img src='/images/staff/anco.png' alt="imagen de programacion avanzada" />
+                            </div>
+                            <div className='card-staff__info'>
+                                <h1 className='text--darkgray'>GAMA</h1>
+                                <h2 className='text--darkgray'><i className="fa-brands fa-whatsapp"></i> 902 267 727</h2>
+                            </div>
+                        </div>
+                        <div className='card-staff__part card-staff__part--descripcion'>
+                            <h2>DESCRIPCIÓN</h2>
+                            <p>Especialista en Matemáticas Avanzadas investigativa y académica en el ámbito de las matemáticas puras en la exploración meticulosa de conceptos teóricos como prácticos. Además, tengo un sólido conocimiento en física, respaldado por mi experiencia en la resolución de problemas interdisciplinarios que requieren un entendimiento profundo de ambos campos.</p>
+                        </div>
+
+                    </article>
+                </li>
             </ul>
 
         }
